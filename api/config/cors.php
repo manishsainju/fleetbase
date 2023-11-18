@@ -19,7 +19,19 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:4200', env('CONSOLE_HOST')],
+    'allowed_origins' => [
+        'http://localhost:4200',
+        env(
+            'CONSOLE_HOST'
+        ),
+        'https://fleetbase.katchkw.com',
+        'https://fleetbase-uat.katchkw.com',
+        'https://fleet.katchkw.com',
+        'https://admin.katchkw.com',
+        'https://beta.katchkw.com',
+        'https://adminuat.katchkw.com',
+        'https://graphql.katchkw.com'
+    ],
 
     'allowed_origins_patterns' => [],
 
